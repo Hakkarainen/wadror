@@ -3,12 +3,12 @@
 <h2><%= @beer.name %></h2>
 <p>
   <strong>Style:</strong>
-  <%= link_to @beer.style.name, @beer.style %>
+  <%= link_to @beer.style.name, @beer.style, class:'btn btn-primary' %>
 </p>
 
 <p>
   <strong>Brewery:</strong>
-  <%= link_to @beer.brewery.name, @beer.brewery %>
+  <%= link_to @beer.brewery.name, @beer.brewery, class:'btn btn-primary' %>
 </p>
 
 <p>
@@ -29,6 +29,6 @@
     <%= f.submit %>
   <% end %>
 
-  <%= link_to 'Edit', edit_beer_path(@beer) %>
+  <%= link_to 'Edit', edit_beer_path(@beer), class:'btn btn-primary' %>
 
 <% end %>

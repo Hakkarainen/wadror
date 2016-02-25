@@ -16,7 +16,7 @@
 
 <p>
   <% @brewery.beers.each do |beer| %>
-    <%= link_to beer.name, beer %>
+    <%= link_to beer.name, beer, class:'btn btn-primary' %>
   <% end %>
 </p>
 
@@ -28,4 +28,4 @@
   <% end %>
 </p>
 
-<%= link_to 'Edit', edit_brewery_path(@brewery) if current_user %>
+<%= link_to 'Edit', edit_brewery_path(@brewery), class:'btn btn-primary' if current_user %>
